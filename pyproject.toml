@@ -1,7 +1,7 @@
 [project]
-name = "vindr-cxr-pytorch"
+name = "nih-chestxray14-pytorch"
 version = "0.1.0"
-description = "Add your description here"
+description = "PyTorch project for multi-label thoracic disease classification using the NIH ChestX-ray14 dataset."
 readme = "README.md"
 authors = [
     { name = "David Simms", email = "davesimms44@gmail.com" }
@@ -18,9 +18,7 @@ dependencies = [
     "torchvision>=0.29.1",
 ]
 
-[project.scripts]
-vindr-cxr-pytorch = "vindr_cxr_pytorch:main"
-
-[build-system]
-requires = ["uv_build>=0.13.5,<0.14.0"]
-build-backend = "uv_build"
+[dependency-groups]
+dev = [
+    "ruff>=0.17.2",
+]
